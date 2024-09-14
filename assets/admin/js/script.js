@@ -22,4 +22,4 @@ jQuery( document ).ready( function( $ )
 			seconds_to_close_the_preloader.hide();
 		}
 	});
-});
+} );

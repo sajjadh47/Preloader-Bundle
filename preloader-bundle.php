@@ -3,7 +3,7 @@
 Plugin Name: Preloader Bundle
 Plugin URI : https://wordpress.org/plugins/preloader-bundle/
 Description: Add Preloader To Your Site With Just One Click! 150+ Preloader To Select From.
-Version: 1.0.0
+Version: 1.0.2
 Author: Sajjad Hossain Sagor
 Author URI: https://profiles.wordpress.org/sajjad67
 Text Domain: preloader-bundle
@@ -42,10 +42,10 @@ add_action( 'plugins_loaded', 'preloader_bundle_load_plugin_textdomain' );
 
 if ( ! function_exists( 'preloader_bundle_load_plugin_textdomain' ) )
 {
-    function preloader_bundle_load_plugin_textdomain()
-    {
-        load_plugin_textdomain( 'preloader-bundle', "", basename( dirname( __FILE__ ) ) . '/languages/' );
-    }
+	function preloader_bundle_load_plugin_textdomain()
+	{
+		load_plugin_textdomain( 'preloader-bundle', "", basename( dirname( __FILE__ ) ) . '/languages/' );
+	}
 }
 
 // ---------------------------------------------------------
@@ -61,16 +61,16 @@ require_once PRELOADER_BUNDLE_PLUGIN_PATH . 'includes/public.php';
 // ---------------------------------------------------------
 // Add Go To Settings Page Link in Plugin List Table
 // ---------------------------------------------------------
-add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'preloader_bundle_add_goto_settings_link' );
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'preloader_bundle_add_goto_settings_link' );
 
 if ( ! function_exists( 'preloader_bundle_add_goto_settings_link' ) )
 {
-    function preloader_bundle_add_goto_settings_link( $links )
-    {   
-        $goto_settings_link = array( '<a href="' . admin_url( 'options-general.php?page=preloader-bundle.php' ) . '">' . __( "Settings", 'preloader_bundle' ) . '</a>' );
-        
-        return array_merge( $links, $goto_settings_link );
-    }
+	function preloader_bundle_add_goto_settings_link( $links )
+	{   
+		$goto_settings_link = array( '<a href="' . admin_url( 'options-general.php?page=preloader-bundle.php' ) . '">' . __( "Settings", 'preloader_bundle' ) . '</a>' );
+		
+		return array_merge( $links, $goto_settings_link );
+	}
 }
 
 // ---------------------------------------------------------
@@ -80,14 +80,14 @@ add_action( 'admin_enqueue_scripts', 'preloader_bundle_admin_enqueue_scripts' );
 
 if ( ! function_exists( 'preloader_bundle_admin_enqueue_scripts' ) )
 {
-    function preloader_bundle_admin_enqueue_scripts()
-    {
-        global $current_screen;
+	function preloader_bundle_admin_enqueue_scripts()
+	{
+		global $current_screen;
 
-        if ( $current_screen->id !== 'settings_page_preloader-bundle' ) return;
+		if ( $current_screen->id !== 'settings_page_preloader-bundle' ) return;
 
-        wp_enqueue_style( 'preloader_bundle_admin_stylesheet', plugins_url( '/assets/admin/css/style.css', __FILE__ ), array(), filemtime( plugin_dir_path( __FILE__ ) . 'assets/admin/css/style.css' ), false );
-        
-        wp_enqueue_script( 'preloader_bundle_admin_script', plugins_url( '/assets/admin/js/script.js', __FILE__ ), array( 'jquery' ) );
-    }
+		wp_enqueue_style( 'preloader_bundle_admin_stylesheet', plugins_url( '/assets/admin/css/style.css', __FILE__ ), array(), filemtime( plugin_dir_path( __FILE__ ) . 'assets/admin/css/style.css' ), false );
+		
+		wp_enqueue_script( 'preloader_bundle_admin_script', plugins_url( '/assets/admin/js/script.js', __FILE__ ), array( 'jquery' ) );
+	}
 }

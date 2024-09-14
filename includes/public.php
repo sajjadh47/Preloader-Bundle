@@ -33,9 +33,9 @@ if ( ! class_exists( 'PRELOADER_BUNDLE_PUBLIC' ) )
 
 				// valid tags
 				$allowed_html = array(
-			        'style' => array(
-			            'type' => array(),
-			        ),
+					'style' => array(
+						'type' => array(),
+					),
 				);
 
 				$stylesheet = "<style type='text/css'> " . esc_html( 'body,html{overflow: hidden!important;}div#preloader-bundle{position:fixed;width:100%;height:100%;top:0;bottom:0;left:0;right:0;background:#ffffff;z-index:99999999999;background-image:url( ' . $gif . ' );background-repeat: no-repeat;background-size:auto;background-position:center;}' ) . " </style>";
@@ -91,11 +91,11 @@ if ( ! class_exists( 'PRELOADER_BUNDLE_PUBLIC' ) )
 				// valid tags
 				$allowed_html = array(
 					'div' => array(
-			            'id' => array(),
-			        ),
-			        'script' => array(
-			            'type' => array(),
-			        ),
+						'id' => array(),
+					),
+					'script' => array(
+						'type' => array(),
+					),
 				);
 
 				if ( $enable_preloader_page == '1' )
@@ -106,7 +106,7 @@ if ( ! class_exists( 'PRELOADER_BUNDLE_PUBLIC' ) )
 					}
 				}
 				elseif( $enable_preloader_page == '0' )
-				{					
+				{
 					echo wp_kses( '<div id="preloader-bundle"></div>' . $script, $allowed_html );
 				}
 			}
