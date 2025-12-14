@@ -3,7 +3,7 @@
 [![Plugin Banner](https://ps.w.org/preloader-bundle/assets/banner-772x250.png)](https://wordpress.org/plugins/preloader-bundle/)
 
 **Tags:** preloader, preloader-bundle, gifs, gifs-preloader, preloader-gifs, animation \
-**Tested up to:** 6.8 \
+**Tested up to:** 6.9 \
 **Requires PHP:** 8.0
 
 Add Beautiful Preloader Into Your Site.
@@ -55,6 +55,9 @@ Just after installing the plugin, go to settings page and set the plugin setting
 ![front preloader](https://ps.w.org/preloader-bundle/assets/screenshot-2.png)
 
 ## Changelog
+
+### 2.0.2
+- Checked for latest wp version 6.9
 
 ### 2.0.1
 * Fixed issue: typo giving fatal error
