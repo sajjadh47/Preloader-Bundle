@@ -3,8 +3,8 @@ Tags: preloader, preloader-bundle, gifs, gifs-preloader, animation
 Contributors: sajjad67
 Author: Sajjad Hossain Sagor
 Requires at least: 5.6
-Tested up to: 6.9
-Stable tag: 2.0.2
+Tested up to: 7.0
+Stable tag: 2.0.3
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,10 +42,12 @@ If successful, click Activate Plugin to activate it, or Return to Plugin Install
 Just after installing the plugin, go to settings page and set the plugin settings according to your needs. And then see the magic. See screenshots.
 
 == Screenshots ==
-1. settings
-2. front preloader
+1. Settings
+2. Front Preloader
 
 == Changelog ==
+= 2.0.3 =
+- Compatibility checkup for latest wp version 7.0
 = 2.0.2 =
 - Checked for latest wp version 6.9
 = 2.0.1 =

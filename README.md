@@ -3,7 +3,7 @@
 [![Plugin Banner](https://ps.w.org/preloader-bundle/assets/banner-1544x500.png)](https://wordpress.org/plugins/preloader-bundle/)
 
 **Tags:** preloader, preloader-bundle, gifs, gifs-preloader, preloader-gifs, animation \
-**Tested up to:** 6.9 \
+**Tested up to:** 7.0 \
 **Requires PHP:** 8.0
 
 Add Beautiful Preloader Into Your Site.
@@ -46,15 +46,18 @@ Just after installing the plugin, go to settings page and set the plugin setting
 
 ## Screenshots
 
-### 1. settings
+### 1. Settings
 
 ![settings](https://ps.w.org/preloader-bundle/assets/screenshot-1.png)
 
-### 2. front preloader
+### 2. Front Preloader
 
 ![front preloader](https://ps.w.org/preloader-bundle/assets/screenshot-2.png)
 
 ## Changelog
+
+### 2.0.3
+- Compatibility checkup for latest wp version 7.0
 
 ### 2.0.2
 - Checked for latest wp version 6.9
